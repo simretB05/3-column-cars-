@@ -29,12 +29,33 @@
   width: 290px;
   height: 430px;
   background-color: $Bright-orange;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
   @include desktop {
     margin: 0;
   }
   &__image {
     padding: 2rem 2rem;
+    animation-name: move-left-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 2;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
   }
+  @keyframes move-left-right {
+    0% {
+      transform: translateX(10px);
+    }
+    20% {
+      transform: translateX(66px);
+    }
+    100% {
+      transform: translateX(164px);
+    }
+  }
+
   &__section {
     padding-left: 2rem;
   }
@@ -76,13 +97,34 @@
 
   &__image {
     padding: 2rem 2rem;
+    padding: 2rem 2rem;
+    animation-name: move-left-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 2;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
   }
+  @keyframes move-left-right {
+    0% {
+      transform: translateX(10px);
+    }
+    20% {
+      transform: translateX(66px);
+    }
+    100% {
+      transform: translateX(164px);
+    }
+  }
+
   &__section {
     padding-left: 2rem;
   }
   &__title {
     color: $Transparent-white;
     margin-bottom: 2rem;
+    font-family: "Big Shoulders Display";
   }
   &__bodycopy {
     width: 243px;
@@ -111,19 +153,44 @@
   width: 290px;
   height: 430px;
   background-color: $Very-darkcyan;
+  border-bottom-right-radius: 5px;
+
+  border-top-right-radius: 5px;
   @include desktop {
     margin: 0;
   }
 
   &__image {
     padding: 2rem 2rem;
+
+    padding: 2rem 2rem;
+    animation-name: move-left-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 2;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
   }
+  @keyframes move-left-right {
+    0% {
+      transform: translateX(10px);
+    }
+    20% {
+      transform: translateX(66px);
+    }
+    100% {
+      transform: translateX(164px);
+    }
+  }
+
   &__section {
     padding-left: 2rem;
   }
   &__title {
     color: $Transparent-white;
     margin-bottom: 2rem;
+    font-family: "Big Shoulders Display";
   }
   &__bodycopy {
     width: 242px;

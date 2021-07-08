@@ -5,7 +5,7 @@
   src: url(https://fonts.gstatic.com/s/lexenddeca/v9/K2F1fZFYk-dHSE0UPPuwQ5qnJy8.woff2) format("woff2");
 }
 
-font-face {
+@font-face {
   font-family: "Big Shoulders Display";
   font-style: normal;
   font-weight: 100;
@@ -51,6 +51,8 @@ font-face {
   width: 290px;
   height: 430px;
   background-color: #e38826;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 @media (min-width: 1440px) {
@@ -61,6 +63,50 @@ font-face {
 
 .sedan-card__image {
   padding: 2rem 2rem;
+  -webkit-animation-name: move-left-right;
+          animation-name: move-left-right;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes move-left-right {
+  0% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  20% {
+    -webkit-transform: translateX(66px);
+            transform: translateX(66px);
+  }
+  100% {
+    -webkit-transform: translateX(164px);
+            transform: translateX(164px);
+  }
+}
+
+@keyframes move-left-right {
+  0% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  20% {
+    -webkit-transform: translateX(66px);
+            transform: translateX(66px);
+  }
+  100% {
+    -webkit-transform: translateX(164px);
+            transform: translateX(164px);
+  }
 }
 
 .sedan-card__section {
@@ -112,6 +158,36 @@ font-face {
 
 .suv-card__image {
   padding: 2rem 2rem;
+  padding: 2rem 2rem;
+  -webkit-animation-name: move-left-right;
+          animation-name: move-left-right;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@keyframes move-left-right {
+  0% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  20% {
+    -webkit-transform: translateX(66px);
+            transform: translateX(66px);
+  }
+  100% {
+    -webkit-transform: translateX(164px);
+            transform: translateX(164px);
+  }
 }
 
 .suv-card__section {
@@ -121,6 +197,7 @@ font-face {
 .suv-card__title {
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 2rem;
+  font-family: "Big Shoulders Display";
 }
 
 .suv-card__bodycopy {
@@ -152,6 +229,8 @@ font-face {
   width: 290px;
   height: 430px;
   background-color: #004241;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 @media (min-width: 1440px) {
@@ -162,6 +241,36 @@ font-face {
 
 .luxury-card__image {
   padding: 2rem 2rem;
+  padding: 2rem 2rem;
+  -webkit-animation-name: move-left-right;
+          animation-name: move-left-right;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@keyframes move-left-right {
+  0% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  20% {
+    -webkit-transform: translateX(66px);
+            transform: translateX(66px);
+  }
+  100% {
+    -webkit-transform: translateX(164px);
+            transform: translateX(164px);
+  }
 }
 
 .luxury-card__section {
@@ -171,6 +280,7 @@ font-face {
 .luxury-card__title {
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 2rem;
+  font-family: "Big Shoulders Display";
 }
 
 .luxury-card__bodycopy {
