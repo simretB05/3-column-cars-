@@ -31,10 +31,12 @@
 
 .card-holder__title {
   color: #f2f2f2;
+  color: yellowgreen;
 }
 
 .card-holder__bodycopy {
   padding-left: 2rem;
+  color: greenyellow;
 }
 
 .card-suv {
