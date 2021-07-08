@@ -1,55 +1,204 @@
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lexenddeca/v9/K2F1fZFYk-dHSE0UPPuwQ5qnJy8.woff2) format("woff2");
+}
+
+font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bigshouldersdisplay/v4/fC1xPZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1Ur-DsBpc.woff2) format("woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Lexend Deca";
+}
+
+@media (min-width: 1440px) {
+  .section {
+    display: block;
+    margin: 0 auto;
+    padding: 16rem 8rem;
+  }
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  background-color: #f2f2f2;
+  padding: 4rem 0 4rem 0;
 }
 
-.card-holder {
-  width: 300px;
+@media (min-width: 1440px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 6rem 17rem 6rem 17rem;
+  }
+}
+
+.sedan-card {
+  margin: 0 auto;
+  width: 290px;
+  height: 430px;
   background-color: #e38826;
 }
 
-.card-holder__image {
+@media (min-width: 1440px) {
+  .sedan-card {
+    margin: 0;
+  }
+}
+
+.sedan-card__image {
+  padding: 2rem 2rem;
+}
+
+.sedan-card__section {
   padding-left: 2rem;
 }
 
-.card-holder__section {
-  padding-left: 2rem;
+.sedan-card__title {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Big Shoulders Display";
+  margin-bottom: 2rem;
 }
 
-.card-holder__title {
+.sedan-card__bodycopy {
+  width: 225px;
+  margin-bottom: 4rem;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5rem;
+  padding-right: 2rem;
+}
+
+.sedan-card__btn {
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  border: 0.15rem solid rgba(255, 255, 255, 0.75);
+  border-radius: 25rem;
+  color: #e38826;
+}
+
+.sedan-card__btn:hover {
+  background-color: #e38826;
+  cursor: pointer;
   color: #f2f2f2;
-  color: yellowgreen;
+  cursor: pointer;
 }
 
-.card-holder__bodycopy {
-  padding-left: 2rem;
-  color: greenyellow;
-}
-
-.card-suv {
-  width: 300px;
+.suv-card {
+  margin: 0 auto;
+  width: 290px;
+  height: 430px;
   background-color: #006970;
 }
 
-.card-luxury {
-  width: 300px;
+@media (min-width: 1440px) {
+  .suv-card {
+    margin: 0;
+  }
+}
+
+.suv-card__image {
+  padding: 2rem 2rem;
+}
+
+.suv-card__section {
+  padding-left: 2rem;
+}
+
+.suv-card__title {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.suv-card__bodycopy {
+  width: 243px;
+  margin-bottom: 4rem;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5rem;
+  padding-right: 2rem;
+}
+
+.suv-card__btn {
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  border: 0.15rem solid rgba(255, 255, 255, 0.75);
+  border-radius: 25rem;
+  color: #006970;
+}
+
+.suv-card__btn:hover {
+  background-color: #006970;
+  cursor: pointer;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+.luxury-card {
+  margin: 0 auto;
+  width: 290px;
+  height: 430px;
   background-color: #004241;
 }
 
+@media (min-width: 1440px) {
+  .luxury-card {
+    margin: 0;
+  }
+}
+
+.luxury-card__image {
+  padding: 2rem 2rem;
+}
+
+.luxury-card__section {
+  padding-left: 2rem;
+}
+
+.luxury-card__title {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+.luxury-card__bodycopy {
+  width: 242px;
+  margin-bottom: 4rem;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 100;
+  line-height: 1.5rem;
+  padding-right: 2rem;
+}
+
+.luxury-card__btn {
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  border: 0.15rem solid rgba(255, 255, 255, 0.75);
+  border-radius: 25rem;
+  color: #004241;
+}
+
+.luxury-card__btn:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
 .attribution {
+  padding-top: 2rem;
   font-size: 11px;
   text-align: center;
 }

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lexenddeca/v9/K2F1fZFYk-dHSE0UPPuwQ5qnJy8.woff2)
+    format("woff2");
+}
+font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bigshouldersdisplay/v4/fC1xPZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1Ur-DsBpc.woff2)
+    format("woff2");
+}
+@mixin mobile {
+  @media (min-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}

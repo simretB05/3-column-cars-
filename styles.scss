@@ -6,39 +6,149 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lexend Deca";
+}
+.section {
+  @include desktop {
+    display: block;
+    margin: 0 auto;
+    padding: 16rem 8rem;
+  }
 }
 .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  background-color: $light-gray;
+  padding: 4rem 0 4rem 0;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    padding: 6rem 17rem 6rem 17rem;
+  }
 }
-.card-holder {
-  width: 300px;
+.sedan-card {
+  margin: 0 auto;
+  width: 290px;
+  height: 430px;
   background-color: $Bright-orange;
+  @include desktop {
+    margin: 0;
+  }
   &__image {
-    padding-left: 2rem;
+    padding: 2rem 2rem;
   }
   &__section {
     padding-left: 2rem;
   }
   &__title {
-    color: $light-gray;
-    color: yellowgreen;
+    color: $Transparent-white;
+    font-family: "Big Shoulders Display";
+    margin-bottom: 2rem;
   }
   &__bodycopy {
-    padding-left: 2rem;
-    color: greenyellow;
+    width: 225px;
+    margin-bottom: 4rem;
+    font-size: 15px;
+    color: $Transparent-white;
+    line-height: 1.5rem;
+    padding-right: 2rem;
+  }
+  &__btn {
+    padding: 0.5rem 1rem;
+    background-color: $light-gray;
+    border: 0.15rem solid $Transparent-white;
+    border-radius: 25rem;
+    color: $Bright-orange;
+  }
+  &__btn:hover {
+    background-color: $Bright-orange;
+    cursor: pointer;
+    color: $light-gray;
+    cursor: pointer;
   }
 }
-.card-suv {
-  width: 300px;
+.suv-card {
+  margin: 0 auto;
+  width: 290px;
+  height: 430px;
   background-color: $Dark-cyan;
+  @include desktop {
+    margin: 0;
+  }
+
+  &__image {
+    padding: 2rem 2rem;
+  }
+  &__section {
+    padding-left: 2rem;
+  }
+  &__title {
+    color: $Transparent-white;
+    margin-bottom: 2rem;
+  }
+  &__bodycopy {
+    width: 243px;
+    margin-bottom: 4rem;
+    font-size: 15px;
+    color: $Transparent-white;
+    line-height: 1.5rem;
+    padding-right: 2rem;
+  }
+  &__btn {
+    padding: 0.5rem 1rem;
+    background-color: $light-gray;
+    border: 0.15rem solid $Transparent-white;
+    border-radius: 25rem;
+    color: $Dark-cyan;
+  }
+  &__btn:hover {
+    background-color: $Dark-cyan;
+    cursor: pointer;
+    color: $light-gray;
+    cursor: pointer;
+  }
 }
-.card-luxury {
-  width: 300px;
+.luxury-card {
+  margin: 0 auto;
+  width: 290px;
+  height: 430px;
   background-color: $Very-darkcyan;
+  @include desktop {
+    margin: 0;
+  }
+
+  &__image {
+    padding: 2rem 2rem;
+  }
+  &__section {
+    padding-left: 2rem;
+  }
+  &__title {
+    color: $Transparent-white;
+    margin-bottom: 2rem;
+  }
+  &__bodycopy {
+    width: 242px;
+    margin-bottom: 4rem;
+    font-size: 15px;
+    color: $Transparent-white;
+    font-weight: 100;
+    line-height: 1.5rem;
+    padding-right: 2rem;
+  }
+  &__btn {
+    padding: 0.5rem 1rem;
+    background-color: $light-gray;
+    border: 0.15rem solid $Transparent-white;
+    border-radius: 25rem;
+    color: $Very-darkcyan;
+  }
+  &__btn:hover {
+    background-color: $Very-darkcyan;
+    color: $light-gray;
+    cursor: pointer;
+  }
 }
 .attribution {
+  padding-top: 2rem;
   font-size: 11px;
   text-align: center;
 }
