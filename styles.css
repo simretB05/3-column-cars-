@@ -33,6 +33,10 @@
   color: #f2f2f2;
 }
 
+.card-holder__bodycopy {
+  padding-left: 2rem;
+}
+
 .card-suv {
   width: 300px;
   background-color: #006970;
