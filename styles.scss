@@ -1,0 +1,44 @@
+@import "./partials/colors";
+@import "./partials/variables";
+@import "./partials/typography";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-holder {
+  width: 300px;
+  background-color: $Bright-orange;
+  &__image {
+    padding-left: 2rem;
+  }
+  &__section {
+    padding-left: 2rem;
+  }
+  &__title {
+    color: $light-gray;
+  }
+  &__bodycopy {
+  }
+}
+.card-suv {
+  width: 300px;
+  background-color: $Dark-cyan;
+}
+.card-luxury {
+  width: 300px;
+  background-color: $Very-darkcyan;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
